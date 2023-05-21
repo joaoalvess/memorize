@@ -14,6 +14,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE35853D2A19B885006BA736 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		AE35853E2A19B8BF006BA736 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AE37A77C2A17F64200C7D029 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE37A77F2A17F64200C7D029 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
 		AE37A7812A17F64200C7D029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		AE37A77E2A17F64200C7D029 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
+				AE35853D2A19B885006BA736 /* README.md */,
+				AE35853E2A19B8BF006BA736 /* .gitignore */,
 				AE37A77F2A17F64200C7D029 /* MemorizeApp.swift */,
 				AE37A7812A17F64200C7D029 /* ContentView.swift */,
 				AE37A7832A17F64300C7D029 /* Assets.xcassets */,
