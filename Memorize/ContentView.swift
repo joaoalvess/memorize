@@ -1,26 +1,84 @@
-//
-//  ContentView.swift
-//  Memorize
-//
-//  Created by Joao Alves on 19/05/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State var emojiCount = 6
+    
+    var emojis = ["❤️", "🖤", "😍", "😎", "😉", "👽", "😈", "🤓", "🖕", "🎄", "🌚", "🎮"]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 75))]) {
+                    ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
+                        CardView(content: emoji)
+                            .aspectRatio(2/3, contentMode: .fit)
+                    }
+                }
+            }
+            .foregroundColor(.red)
+            HStack {
+                remove
+                Spacer()
+                add
+            }
+            .font(.largeTitle)
+            .padding(.horizontal)
         }
-        .padding()
+        .padding(.all)
+    }
+    
+    
+    var remove: some View {
+        Button {
+            if emojiCount > 1 {
+                emojiCount -= 1
+            }
+        } label: {
+            Image(systemName: "minus.circle")
+        }
+    }
+    
+    var add: some View {
+        Button {
+            if emojiCount < emojis.count {
+                emojiCount += 1
+            }
+        } label: {
+            Image(systemName: "plus.circle")
+        }
     }
 }
+
+struct CardView: View {
+    @State var isFaceUp: Bool = false
+    
+    var content: String
+    
+    var body: some View {
+        ZStack {
+            let shape = RoundedRectangle(cornerRadius: 20)
+            if(isFaceUp) {
+                shape.foregroundColor(.white)
+                shape.strokeBorder(lineWidth: 3)
+                Text(content).font(.largeTitle)
+            } else {
+                shape.fill()
+                Text("f")
+                    .font(.largeTitle)
+            }
+        }
+        .onTapGesture {
+            isFaceUp = !isFaceUp
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
+        ContentView()
+            .preferredColorScheme(.dark)
     }
 }
