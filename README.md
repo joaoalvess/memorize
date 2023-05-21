@@ -1,7 +1,5 @@
 # Memory Game iOS App
 
-![App Demo](demo.gif)
-
 Welcome to the Memory Game iOS App! This is a classic memory game where players need to match pairs of cards by flipping them over. The goal is to find all the matching pairs with the fewest number of moves.
 
 ## Features
@@ -9,7 +7,6 @@ Welcome to the Memory Game iOS App! This is a classic memory game where players 
 - Beautifully designed user interface with appealing graphics and animations.
 - Multiple difficulty levels to challenge players of all ages.
 - Various themes and card designs to customize the game's appearance.
-- Sound effects and background music to enhance the gaming experience.
 - High scores tracking to encourage players to improve their performance.
 
 ## Installation
@@ -35,17 +32,11 @@ Contributions to the Memory Game iOS App are welcome! If you have any ideas for 
 
 The Memory Game iOS App is released under the [MIT License](LICENSE).
 
-## Acknowledgements
-
-- The card graphics used in this app are from [OpenGameArt](https://opengameart.org/).
-- Sound effects obtained from [Zapsplat](https://www.zapsplat.com/).
-- Background music created by [Kevin MacLeod](https://incompetech.com/) and licensed under Creative Commons: By Attribution 4.0 License.
-
 ## Contact
 
 If you have any questions, suggestions, or feedback, feel free to reach out to the developer:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Twitter: [@your-twitter-handle](https://twitter.com/your-twitter-handle)
+- Email: [contato@joaoalvescosta.com.br](mailto:contato@joaoalvescosta.com.br)
+- Linkedin: [joaoalvescosta](https://www.linkedin.com/in/joaoalvescosta/)
 
 Enjoy the Memory Game iOS App!
