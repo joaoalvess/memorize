@@ -1,0 +1,25 @@
+# Ignorar arquivos e diretórios gerados automaticamente
+DerivedData/
+.build/
+Pods/
+*.xcworkspace
+
+# Ignorar arquivos de configuração específicos do Xcode
+xcuserdata/
+*.xcuserstate
+
+# Ignorar arquivos gerados pelo Swift Package Manager
+.build/
+
+# Ignorar arquivos de depuração do Xcode
+*.swiftdoc
+*.swiftmodule
+
+# Ignorar arquivos de configuração de ambiente local
+/.env
+
+# Ignorar arquivos de dependências específicas do projeto
+# Exemplo para ignorar as pastas do Carthage
+/Carthage
+
+# Ignorar arquivos ou diretórios específicos
