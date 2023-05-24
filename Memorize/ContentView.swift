@@ -1,9 +1,14 @@
+//
+//  ContentView.swift
+//  Memorize
+//
+//  Created by Joao Alves on 19/05/23.
+//
+
 import SwiftUI
 
 struct ContentView: View {
-    @State var emojiCount = 6
-    
-    var emojis = ["❤️", "🖤", "😍", "😎", "😉", "👽", "😈", "🤓", "🖕", "🎄", "🌚", "🎮"]
+    var ViewModel: EmojiMemoryGame
     
     var body: some View {
         VStack {
@@ -16,42 +21,12 @@ struct ContentView: View {
                 }
             }
             .foregroundColor(.red)
-            HStack {
-                remove
-                Spacer()
-                add
-            }
-            .font(.largeTitle)
-            .padding(.horizontal)
         }
         .padding(.all)
-    }
-    
-    
-    var remove: some View {
-        Button {
-            if emojiCount > 1 {
-                emojiCount -= 1
-            }
-        } label: {
-            Image(systemName: "minus.circle")
-        }
-    }
-    
-    var add: some View {
-        Button {
-            if emojiCount < emojis.count {
-                emojiCount += 1
-            }
-        } label: {
-            Image(systemName: "plus.circle")
-        }
     }
 }
 
 struct CardView: View {
-    @State var isFaceUp: Bool = false
-    
     var content: String
     
     var body: some View {
